@@ -15,6 +15,9 @@
 		0C4D0B9825D5A2B9002BE00E /* libglfw.3.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C4D0B9225D5A1B6002BE00E /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0C4F51E625EBCC7100E5650D /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4F51E525EBCC7100E5650D /* window.cpp */; };
 		0C4F51E925EBCEA000E5650D /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4F51E725EBCEA000E5650D /* app.cpp */; };
+		0C4F51F025EBDC0400E5650D /* pipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4F51EF25EBDC0400E5650D /* pipeline.cpp */; };
+		0C4F51F425EBE9CE00E5650D /* simpleshader.vert.spv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C4F51F225EBE53B00E5650D /* simpleshader.vert.spv */; };
+		0C4F51F525EBE9CE00E5650D /* simpleshader.frag.spv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C4F51F125EBE53000E5650D /* simpleshader.frag.spv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +29,17 @@
 			files = (
 				0C4D0B9825D5A2B9002BE00E /* libglfw.3.3.dylib in CopyFiles */,
 				0C4D0B9725D5A2B5002BE00E /* libvulkan.1.2.162.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4F51F325EBE9A000E5650D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				0C4F51F425EBE9CE00E5650D /* simpleshader.vert.spv in CopyFiles */,
+				0C4F51F525EBE9CE00E5650D /* simpleshader.frag.spv in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +56,10 @@
 		0C4F51E525EBCC7100E5650D /* window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = "<group>"; };
 		0C4F51E725EBCEA000E5650D /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
 		0C4F51E825EBCEA000E5650D /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
+		0C4F51EE25EBDC0400E5650D /* pipeline.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pipeline.hpp; sourceTree = "<group>"; };
+		0C4F51EF25EBDC0400E5650D /* pipeline.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pipeline.cpp; sourceTree = "<group>"; };
+		0C4F51F125EBE53000E5650D /* simpleshader.frag.spv */ = {isa = PBXFileReference; lastKnownFileType = file; path = simpleshader.frag.spv; sourceTree = "<group>"; };
+		0C4F51F225EBE53B00E5650D /* simpleshader.vert.spv */ = {isa = PBXFileReference; lastKnownFileType = file; path = simpleshader.vert.spv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +95,10 @@
 		0C4D0B8625D59A64002BE00E /* vulkanTesting */ = {
 			isa = PBXGroup;
 			children = (
+				0C4F51F225EBE53B00E5650D /* simpleshader.vert.spv */,
+				0C4F51F125EBE53000E5650D /* simpleshader.frag.spv */,
+				0C4F51EF25EBDC0400E5650D /* pipeline.cpp */,
+				0C4F51EE25EBDC0400E5650D /* pipeline.hpp */,
 				0C4D0B8725D59A64002BE00E /* main.cpp */,
 				0C02B17525D8E5A300050DD5 /* vulkanrenderer.h */,
 				0C02B17625D8E7C500050DD5 /* vulkanrenderer.cpp */,
@@ -107,6 +129,7 @@
 				0C4D0B8025D59A64002BE00E /* Sources */,
 				0C4D0B8125D59A64002BE00E /* Frameworks */,
 				0C4D0B8225D59A64002BE00E /* CopyFiles */,
+				0C4F51F325EBE9A000E5650D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -155,6 +178,7 @@
 			files = (
 				0C4F51E625EBCC7100E5650D /* window.cpp in Sources */,
 				0C4F51E925EBCEA000E5650D /* app.cpp in Sources */,
+				0C4F51F025EBDC0400E5650D /* pipeline.cpp in Sources */,
 				0C4D0B8825D59A64002BE00E /* main.cpp in Sources */,
 				0C02B17725D8E7C500050DD5 /* vulkanrenderer.cpp in Sources */,
 			);

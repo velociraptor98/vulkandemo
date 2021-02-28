@@ -1,0 +1,2 @@
+/Users/kunal/Vulkan/macOS/bin/glslc vulkanTesting/shaders/simpleshader.vert -o vulkanTesting/shaders/simpleshader.vert.spv
+/Users/kunal/Vulkan/macOS/bin/glslc vulkanTesting/shaders/simpleshader.frag -o vulkanTesting/shaders/simpleshader.frag.spv
