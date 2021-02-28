@@ -7,23 +7,18 @@
 #include <glm/mat4x4.hpp>
 #include "vulkanrenderer.h"
 #include <iostream>
+#include "app.hpp"
+#include <cstdlib>
+#include <stdexcept>
 
-GLFWwindow* window;
-void init(int window_width = 800,int window_height = 600,std::string name = "vulkan window"){
-    glfwInit();
-    glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-    window = glfwCreateWindow(window_width,window_height,"test window",nullptr,nullptr);
-    uint32_t extensionCount = 0;
-    vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr);
-    std::cout << extensionCount << " extensions supported\n";
-}
 int main() {
     //Initialize vulkan window
-    init();
-    while(!glfwWindowShouldClose(window)) {
-        glfwPollEvents();
+    lve::app testApp{};
+    try{
+        testApp.run();
+    }catch (const std::exception &e){
+        std::cout<<e.what()<<std::endl;
+        return EXIT_FAILURE;
     }
-    glfwDestroyWindow(window);
-    glfwTerminate();
     return 0;
 }
