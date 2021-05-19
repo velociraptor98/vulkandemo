@@ -18,6 +18,7 @@
 		0C4F51F025EBDC0400E5650D /* pipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C4F51EF25EBDC0400E5650D /* pipeline.cpp */; };
 		0C4F51F425EBE9CE00E5650D /* simpleshader.vert.spv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C4F51F225EBE53B00E5650D /* simpleshader.vert.spv */; };
 		0C4F51F525EBE9CE00E5650D /* simpleshader.frag.spv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0C4F51F125EBE53000E5650D /* simpleshader.frag.spv */; };
+		0CA04A102655782F0083E2D9 /* lve_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CA04A0F2655782F0083E2D9 /* lve_device.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,8 @@
 		0C4F51EF25EBDC0400E5650D /* pipeline.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pipeline.cpp; sourceTree = "<group>"; };
 		0C4F51F125EBE53000E5650D /* simpleshader.frag.spv */ = {isa = PBXFileReference; lastKnownFileType = file; path = simpleshader.frag.spv; sourceTree = "<group>"; };
 		0C4F51F225EBE53B00E5650D /* simpleshader.vert.spv */ = {isa = PBXFileReference; lastKnownFileType = file; path = simpleshader.vert.spv; sourceTree = "<group>"; };
+		0CA04A0E2655782F0083E2D9 /* lve_device.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = lve_device.hpp; path = ../../../../Downloads/lve_device.hpp; sourceTree = "<group>"; };
+		0CA04A0F2655782F0083E2D9 /* lve_device.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lve_device.cpp; path = ../../../../Downloads/lve_device.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 		0C4D0B8625D59A64002BE00E /* vulkanTesting */ = {
 			isa = PBXGroup;
 			children = (
+				0CA04A0F2655782F0083E2D9 /* lve_device.cpp */,
+				0CA04A0E2655782F0083E2D9 /* lve_device.hpp */,
 				0C4F51F225EBE53B00E5650D /* simpleshader.vert.spv */,
 				0C4F51F125EBE53000E5650D /* simpleshader.frag.spv */,
 				0C4F51EF25EBDC0400E5650D /* pipeline.cpp */,
@@ -177,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C4F51E625EBCC7100E5650D /* window.cpp in Sources */,
+				0CA04A102655782F0083E2D9 /* lve_device.cpp in Sources */,
 				0C4F51E925EBCEA000E5650D /* app.cpp in Sources */,
 				0C4F51F025EBDC0400E5650D /* pipeline.cpp in Sources */,
 				0C4D0B8825D59A64002BE00E /* main.cpp in Sources */,

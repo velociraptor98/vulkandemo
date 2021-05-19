@@ -22,6 +22,7 @@ public:
     window(int width,int height,std::string name);
     ~window();
     bool shouldClose() {return glfwWindowShouldClose(currentWindow);}
+    void createWindowSurface(VkInstance instance,VkSurfaceKHR *surface);
     window(const window &) = delete;
     window &operator= (const window &) = delete;
 };

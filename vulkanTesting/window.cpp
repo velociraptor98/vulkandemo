@@ -25,4 +25,10 @@ void window::init(){
     vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr);
     std::cout << extensionCount << " extensions supported\n";
 }
+void window::createWindowSurface(VkInstance instance,VkSurfaceKHR *surface){
+    if(glfwCreateWindowSurface(instance, currentWindow, nullptr, surface)!= VK_SUCCESS){
+        throw std::runtime_error("failed to create windows surface");
+    }
+}
+
 }
